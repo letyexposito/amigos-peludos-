@@ -1,16 +1,14 @@
-
 html {
     font-size: 10px;
     font-family: 'Open Sans', sans-serif;
 }
-
 body {
     width: 600px;
     margin: 0 auto;
     background-color: #FFF8DC;
-    border: 5px solid #FFA07A; 
-    padding: 20px 20px;
-   
+    border: 5px solid #FFA07A;
+    padding: 20px; 
+}
 
 
 h1 {
@@ -73,10 +71,12 @@ button:hover {
 }
 
 img {
-    max-width: 25%; /* Ajusta el tamaño para que sea pequeño */
-    height: auto;
-    display: block;
-    margin: 20px auto; /* Centrado horizontal */
-    border-radius: 10px; /* Bordes redondeados */
-    border: 2px solid #FFA07A; /* Borde alrededor */
-}
+   
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 20px auto; 
+    border-radius: 10px; 
+    border: 2px solid #FFA07A; 
+
+
