@@ -7,10 +7,10 @@ body {
     width: 600px;
     margin: 0 auto;
     background-color: #FFF8DC;
-    background-image: url('https://example.com/imagen-fondo.jpg'); /* Asegúrate de usar la URL correcta de tu imagen */
-    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
-    background-position: center; /* Centra la imagen */
-    background-attachment: fixed; /* Fija la imagen de fondo cuando se desplaza */
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Cielo_de_Babahoyo.JPG/800px-Cielo_de_Babahoyo.JPG');
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
     border: 5px solid #FFA07A;
     padding: 20px;
 }
