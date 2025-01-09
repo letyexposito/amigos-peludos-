@@ -7,10 +7,13 @@ body {
     width: 600px;
     margin: 0 auto;
     background-color: #FFF8DC;
-    border: 5px solid #FFA07A; 
-    padding: 20px 20px;
-   
-
+    background-image: url('https://example.com/imagen-fondo.jpg'); /* Asegúrate de usar la URL correcta de tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Fija la imagen de fondo cuando se desplaza */
+    border: 5px solid #FFA07A;
+    padding: 20px;
+}
 
 h1 {
     font-size: 60px;
@@ -72,11 +75,12 @@ button:hover {
 }
 
 img {
-    max-width: 25%; /* Ajusta el tamaño para que sea pequeño */
+  max-width: 100%;
     height: auto;
     display: block;
-    margin: 20px auto; /* Centrado horizontal */
-    border-radius: 10px; /* Bordes redondeados */
-    border: 2px solid #FFA07A; /* Borde alrededor */
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 2px solid #FFA07A;
+    box-sizing: border-box;
 }
 
