@@ -76,13 +76,13 @@ button:hover {
     background-color: #F28563;
 }
 
-img {
-   
-    max-width: 100%; 
-    height: auto; 
-    display: block; 
-    margin: 20px auto; 
-    border-radius: 10px; 
-    border: 2px solid #FFA07A; 
 
-
+   img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 2px solid #FFA07A;
+    box-sizing: border-box;
+}
