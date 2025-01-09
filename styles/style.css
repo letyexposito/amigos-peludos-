@@ -3,11 +3,17 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 body {
+body {
     width: 600px;
     margin: 0 auto;
     background-color: #FFF8DC;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Cielo_de_Babahoyo.JPG/800px-Cielo_de_Babahoyo.JPG'); 
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed; 
     border: 5px solid #FFA07A;
-    padding: 20px; 
+    padding: 20px;
+}
 }
 
 
