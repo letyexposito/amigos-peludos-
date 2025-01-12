@@ -2,20 +2,18 @@ html {
     font-size: 10px;
     font-family: 'Open Sans', sans-serif;
 }
-body {
+
 body {
     width: 600px;
     margin: 0 auto;
     background-color: #FFF8DC;
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Cielo_de_Babahoyo.JPG/800px-Cielo_de_Babahoyo.JPG'); 
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Cielo_de_Babahoyo.JPG/800px-Cielo_de_Babahoyo.JPG');
     background-size: cover; 
     background-position: center;
-    background-attachment: fixed; 
+    background-attachment: fixed;
     border: 5px solid #FFA07A;
     padding: 20px;
 }
-}
-
 
 h1 {
     font-size: 60px;
@@ -76,8 +74,7 @@ button:hover {
     background-color: #F28563;
 }
 
-
-   img {
+img {
     max-width: 100%;
     height: auto;
     display: block;
@@ -85,4 +82,15 @@ button:hover {
     border-radius: 10px;
     border: 2px solid #FFA07A;
     box-sizing: border-box;
+    cursor: pointer;
+}
+
+#movingBox {
+    width: 50px;
+    height: 50px;
+    background-color: #FF6347;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px;
 }
