@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="utf-8">
     <title>Amigos Peludos</title>
@@ -8,7 +8,10 @@
 </head>
 <body>
     <h1>¡Bienvenido, <span id="name">Amante de Mascotas</span>!</h1>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Foxteri%C3%A9r_a_koc%C3%BAr.jpg/1024px-Foxteri%C3%A9r_a_koc%C3%BAr.jpg" alt="Logo de Mascotas">
+    
+    <!-- Imagen para intercambiar al hacer clic -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Foxteri%C3%A9r_a_koc%C3%BAr.jpg/1024px-Foxteri%C3%A9r_a_koc%C3%BAr.jpg" 
+        alt="Logo de Mascotas" id="imagen" />
     
     <p>En Amigos Peludos, nos dedicamos a mejorar la vida de nuestras queridas mascotas a través de:</p>
     
@@ -22,8 +25,17 @@
     
     <a href="https://apadan.org/" target="_blank">Descubre Más</a>
     <button id="changeUser">Cambiar Usuario</button>
+
+    <!-- Campo de texto para cambiar contenido -->
+    <input type="text" id="campoTexto" placeholder="Escribe tu mensaje aquí..." />
+    <p id="parrafo">Este texto cambiará cuando escribas algo.</p>
+
+    <!-- Pata de perro en movimiento -->
+    <img id="pata" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Animal_pawprint.svg/1024px-Animal_pawprint.svg.png" alt="Pata de perro">
+
     <script src="scripts/main.js"></script>
 </body>
 </html>
+
 
 
