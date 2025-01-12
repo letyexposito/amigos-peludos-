@@ -7,15 +7,17 @@ body {
     width: 600px;
     margin: 0 auto;
     background-color: #FFF8DC;
-    border: 5px solid #FFA07A; 
-    padding: 20px 20px;
-   
-
+    border: 5px solid #FFA07A;
+    padding: 20px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Foxteri%C3%A9r_a_koc%C3%BAr.jpg/1024px-Foxteri%C3%A9r_a_koc%C3%BAr.jpg');
+    background-size: cover;
+    background-position: center;
+}
 
 h1 {
     font-size: 60px;
     text-align: center;
-    color: #FF6347; 
+    color: #FF6347;
     letter-spacing: 1px;
 }
 
@@ -72,12 +74,21 @@ button:hover {
 }
 
 img {
-   
-    max-width: 100%; 
-    height: auto; 
-    display: block; 
-    margin: 20px auto; 
-    border-radius: 10px; 
-    border: 2px solid #FFA07A; 
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 2px solid #FFA07A;
+    cursor: pointer;
+}
+
+#pata {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 50px;
+    transition: transform 0.1s;
+}
 
 
