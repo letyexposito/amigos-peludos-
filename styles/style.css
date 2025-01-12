@@ -1,34 +1,42 @@
+/* Establece una base de 10px para usar rem más fácilmente */
 html {
     font-size: 10px;
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Estilos del body */
 body {
     width: 600px;
     margin: 0 auto;
     background-color: #FFF8DC;
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Cielo_de_Babahoyo.JPG/800px-Cielo_de_Babahoyo.JPG');
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed; /* Puede cambiarse por 'scroll' en móviles si tienes problemas */
     border: 5px solid #FFA07A;
     padding: 20px;
+    box-sizing: border-box;
 }
 
+/* Estilos para el encabezado h1 */
 h1 {
-    font-size: 60px;
+    font-size: 6rem; /* Usa rem para ser más flexible */
     text-align: center;
-    color: #FF6347; 
+    color: #FF6347;
     letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Mejora la visibilidad del texto */
 }
 
+/* Estilos para los párrafos */
 p {
-    font-size: 18px;
+    font-size: 1.8rem; /* Usa rem */
     color: #333;
     line-height: 1.5;
     text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera para mejorar la legibilidad */
 }
 
+/* Estilos para las listas */
 ul {
     list-style: none;
     padding: 0;
@@ -36,61 +44,82 @@ ul {
 }
 
 ul li {
-    font-size: 20px;
+    font-size: 2rem;
     color: #FF6347;
     margin: 5px 0;
 }
 
+/* Estilos para los enlaces */
 a {
-    font-size: 18px;
+    font-size: 1.8rem;
     display: block;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 2rem;
     color: white;
     background-color: #FF6347;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave para hover */
 }
 
 a:hover {
     background-color: #E5533D;
 }
 
+a:focus {
+    outline: 2px solid #FF6347;
+}
+
+/* Estilos para los botones */
 button {
-    font-size: 18px;
-    padding: 10px 20px;
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
     background-color: #FFA07A;
     color: white;
     border: none;
     cursor: pointer;
     display: block;
-    margin: 20px auto;
+    margin: 2rem auto;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
     background-color: #F28563;
 }
 
+button:focus {
+    outline: 2px solid #FFA07A;
+}
+
+/* Estilos para las imágenes */
 img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 20px auto;
+    margin: 2rem auto;
     border-radius: 10px;
     border: 2px solid #FFA07A;
     box-sizing: border-box;
     cursor: pointer;
 }
 
+/* Estilos para el cuadro que se moverá */
 #movingBox {
-    width: 50px;
-    height: 50px;
+    width: 5rem;
+    height: 5rem;
     background-color: #FF6347;
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 1rem;
+    left: 1rem;
     border-radius: 5px;
+    transition: top 0.3s, left 0.3s; /* Suaviza el movimiento si se mueve con JS */
 }
+
+/* Agrega una sombra al borde de todo el contenido */
+body {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
