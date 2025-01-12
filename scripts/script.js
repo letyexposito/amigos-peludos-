@@ -22,16 +22,20 @@ campoTexto.addEventListener("input", function() {
 // Movimiento de la pata de perro
 let pata = document.getElementById("pata");
 
-let posX = 50;
-let posY = 50;
+let posX = 0;  // Posición inicial
+let posY = 200; // Posición inicial
 
-setInterval(function() {
-    posX += 5;
+// Función para mover la pata de perro
+function moverPata() {
+    posX += 5;  // Desplazamiento en el eje X
     if (posX > window.innerWidth) {
-        posX = 0;
+        posX = 0; // Resetea la posición si llega al final de la pantalla
     }
     pata.style.transform = `translate(${posX}px, ${posY}px)`;
-}, 100);
+}
+
+// Ejecutar el movimiento cada 100ms
+setInterval(moverPata, 100);
 
 // Cambiar el nombre del usuario
 let miBoton = document.querySelector('#changeUser');
@@ -44,7 +48,7 @@ function establecerNombre() {
     }
     localStorage.setItem('nombre', miNombre);
     miEncabezado.textContent = miNombre;
-    document.body.style.fontFamily = "'Open Sans', sans-serif";
+    document.body.style.fontFamily = "'Open Sans', sans-serif"; // Cambiar la fuente
 }
 
 if (!localStorage.getItem('nombre')) {
