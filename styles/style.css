@@ -73,6 +73,7 @@ button:hover {
     background-color: #F28563;
 }
 
+/* Estilo para las imágenes */
 img {
     max-width: 100%;
     height: auto;
@@ -80,14 +81,18 @@ img {
     margin: 20px auto;
     border-radius: 10px;
     border: 2px solid #FFA07A;
-    cursor: pointer;
+    background-color: transparent; /* Asegura que no haya fondo */
+    box-shadow: none; /* Remueve cualquier sombra de la imagen */
 }
 
+/* Especifico el estilo para la pata en movimiento */
 #pata {
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 200px;
+    left: 0;
     width: 50px;
     transition: transform 0.1s;
+    z-index: 10;
 }
+
 
