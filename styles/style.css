@@ -9,7 +9,7 @@ body {
     background-color: #FFF8DC;
     border: 5px solid #FFA07A;
     padding: 20px;
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Foxteri%C3%A9r_a_koc%C3%BAr.jpg/1024px-Foxteri%C3%A9r_a_koc%C3%BAr.jpg');
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlwToQjifC7gzuuusoKdv5BCiWo4RJuKrbLA&s');
     background-size: cover;
     background-position: center;
 }
@@ -90,3 +90,4 @@ img {
     width: 50px;
     transition: transform 0.1s;
 }
+
