@@ -1,42 +1,33 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amigos Peludos</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <h1>¡Bienvenido, <span id="name">Amante de Mascotas</span>!</h1>
-
-    <!-- Imagen para intercambiar al poner el ratón encima -->
-    <img id="imagen" 
-         src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Foxteri%C3%A9r_a_koc%C3%BAr.jpg/1024px-Foxteri%C3%A9r_a_koc%C3%BAr.jpg" 
-         alt="Logo de Mascotas">
-
-    <p>En Amigos Peludos, nos dedicamos a mejorar la vida de nuestras queridas mascotas a través de:</p>
+    <img id="mainImage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Foxteri%C3%A9r_a_koc%C3%BAr.jpg/1024px-Foxteri%C3%A9r_a_koc%C3%BAr.jpg" 
+        alt="Perro y gato juntos">
+    
+    <p id="dynamicText">En Amigos Peludos, nos dedicamos a mejorar la vida de nuestras queridas mascotas.</p>
     
     <ul>
         <li>Consejos para el cuidado</li>
         <li>Adopciones responsables</li>
         <li>Productos para consentirlos</li>
     </ul>
-    
-    <p>¡Únete a nuestra comunidad y haz feliz a tu mejor amigo peludo!</p>
-    
-    <a href="https://apadan.org/" target="_blank">Descubre Más</a>
+
+    <div id="movingPawContainer">
+        <img id="pata" src="https://images.creativefabrica.com/products/previews/2024/03/25/yXrm7imqe/2eAy13SSYtro1vZbpNRZRafEsXB-mobile.jpg" alt="Pata de perro">
+    </div>
+
     <button id="changeUser">Cambiar Usuario</button>
-
-    <!-- Campo de texto para cambiar contenido -->
-    <input type="text" id="campoTexto" placeholder="Escribe tu mensaje aquí..." />
-    <p id="parrafo">Este texto cambiará cuando escribas algo.</p>
-
-    <!-- Pata de perro en movimiento -->
-    <img id="pata" src="https://images.creativefabrica.com/products/previews/2024/03/25/yXrm7imqe/2eAy13SSYtro1vZbpNRZRafEsXB-mobile.jpg" alt="Pata de perro">
-
     <script src="scripts/main.js"></script>
 </body>
 </html>
+
 
 
 
