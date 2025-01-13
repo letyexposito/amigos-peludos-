@@ -11,7 +11,7 @@ imagen.addEventListener("mouseleave", function () {
     imagen.src = imagenOriginal;
 });
 
-// Cambiar el nombre del usuario
+// Cambiar el nombre del usuario y estilo
 let miBoton = document.getElementById('changeUser');
 let miEncabezado = document.querySelector('h1 span');
 
@@ -22,6 +22,10 @@ function establecerNombre() {
     }
     localStorage.setItem('nombre', miNombre);
     miEncabezado.textContent = miNombre;
+
+    // Cambiar el estilo del encabezado
+    miEncabezado.style.color = '#32CD32'; // Verde
+    miEncabezado.style.fontFamily = "'Roboto', sans-serif"; // Nueva fuente
 }
 
 if (!localStorage.getItem('nombre')) {
@@ -34,4 +38,5 @@ if (!localStorage.getItem('nombre')) {
 miBoton.onclick = function () {
     establecerNombre();
 };
+
 
