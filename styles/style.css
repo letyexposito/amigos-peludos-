@@ -73,7 +73,6 @@ button:hover {
     background-color: #F28563;
 }
 
-/* Estilo para las imágenes */
 img {
     max-width: 100%;
     height: auto;
@@ -81,18 +80,26 @@ img {
     margin: 20px auto;
     border-radius: 10px;
     border: 2px solid #FFA07A;
-    background-color: transparent; /* Asegura que no haya fondo */
-    box-shadow: none; /* Remueve cualquier sombra de la imagen */
 }
 
-/* Especifico el estilo para la pata en movimiento */
+/* Específico para la pata */
 #pata {
     position: absolute;
     top: 200px;
     left: 0;
     width: 50px;
-    transition: transform 0.1s;
     z-index: 10;
+    animation: moveHorizontal 3s linear infinite;
+}
+
+/* Animación para movimiento horizontal */
+@keyframes moveHorizontal {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
 }
 
 
