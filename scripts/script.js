@@ -34,3 +34,4 @@ if (!localStorage.getItem('nombre')) {
 miBoton.onclick = function () {
     establecerNombre();
 };
+
