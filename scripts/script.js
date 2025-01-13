@@ -1,44 +1,18 @@
 // Cambiar imagen al poner el ratón encima
-const imagen = document.getElementById("imagen");
+const imagen = document.getElementById("mainImage");
 const imagenOriginal = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Foxteri%C3%A9r_a_koc%C3%BAr.jpg/1024px-Foxteri%C3%A9r_a_koc%C3%BAr.jpg";
-const imagenCambio = "https://upload.wikimedia.org/wikipedia/commons/c/c8/Perro_y_gato_durmiendo_en_el_sill%C3%B3n.jpg";
+const imagenCambio = "https://upload.wikimedia.org/wikipedia/commons/2/2c/Gato_9-_Con_perro_durmiendo.jpg";
 
-imagen.addEventListener("mouseenter", function() {
+imagen.addEventListener("mouseenter", function () {
     imagen.src = imagenCambio;
 });
 
-imagen.addEventListener("mouseleave", function() {
+imagen.addEventListener("mouseleave", function () {
     imagen.src = imagenOriginal;
 });
 
-// Campo de texto para cambiar el contenido del párrafo
-const campoTexto = document.getElementById("campoTexto");
-const parrafo = document.getElementById("parrafo");
-
-campoTexto.addEventListener("input", function() {
-    parrafo.textContent = campoTexto.value;
-});
-
-// Movimiento de la pata de perro
-let pata = document.getElementById("pata");
-
-let posX = 0;  // Posición inicial
-let posY = 200; // Posición inicial
-
-// Función para mover la pata de perro
-function moverPata() {
-    posX += 5;  // Desplazamiento en el eje X
-    if (posX > window.innerWidth) {
-        posX = 0; // Resetea la posición si llega al final de la pantalla
-    }
-    pata.style.transform = `translate(${posX}px, ${posY}px)`;
-}
-
-// Ejecutar el movimiento cada 100ms
-setInterval(moverPata, 100);
-
 // Cambiar el nombre del usuario
-let miBoton = document.querySelector('#changeUser');
+let miBoton = document.getElementById('changeUser');
 let miEncabezado = document.querySelector('h1 span');
 
 function establecerNombre() {
@@ -48,7 +22,6 @@ function establecerNombre() {
     }
     localStorage.setItem('nombre', miNombre);
     miEncabezado.textContent = miNombre;
-    document.body.style.fontFamily = "'Open Sans', sans-serif"; // Cambiar la fuente
 }
 
 if (!localStorage.getItem('nombre')) {
@@ -61,4 +34,3 @@ if (!localStorage.getItem('nombre')) {
 miBoton.onclick = function () {
     establecerNombre();
 };
-
