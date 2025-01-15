@@ -1,32 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amigos Peludos</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>¡Bienvenido, <span id="name">Amante de Mascotas</span>!</h1>
-    <img id="mainImage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Foxteri%C3%A9r_a_koc%C3%BAr.jpg/1024px-Foxteri%C3%A9r_a_koc%C3%BAr.jpg" alt="Logo de Mascotas">
-
-    <p>En Amigos Peludos, nos dedicamos a mejorar la vida de nuestras queridas mascotas a través de:</p>
-
+    <img id="mainImage" 
+         src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Foxteri%C3%A9r_a_koc%C3%BAr.jpg/1024px-Foxteri%C3%A9r_a_koc%C3%BAr.jpg" 
+         alt="Perro y gato juntos">
+    <p id="dynamicText">En Amigos Peludos, nos dedicamos a mejorar la vida de nuestras queridas mascotas.</p>
+    
     <ul>
         <li>Consejos para el cuidado</li>
         <li>Adopciones responsables</li>
         <li>Productos para consentirlos</li>
     </ul>
 
-    <p>¡Únete a nuestra comunidad y haz feliz a tu mejor amigo peludo!</p>
+    <div id="movingPawContainer">
+        <img id="pata" 
+             src="https://e7.pngegg.com/pngimages/172/54/png-clipart-dog-paw-silhouette-dog-animals-paw.png" 
+             alt="Pata de gato">
+    </div>
 
-    <input type="text" id="userText" placeholder="Escribe aquí para cambiar el texto..." style="display: block; margin: 20px auto; padding: 10px; font-size: 16px; width: 80%;">
-
-    <a href="https://apadan.org/" target="_blank">Descubre Más</a>
     <button id="changeUser">Cambiar Usuario</button>
-
-    <div id="movingBox"></div>
-
-    <script src="scripts.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
+
