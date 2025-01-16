@@ -39,12 +39,13 @@
     <p><a href="https://apadan.org/" target="_blank">Descubre más</a></p>
 
     <script>
+        // Agregar evento al botón para cambiar el usuario
         document.getElementById('changeName').addEventListener('click', function() {
             const newName = prompt("Introduce tu nombre:");
             if (newName) {
                 const nameElement = document.getElementById('name');
-                nameElement.textContent = newName;
-                nameElement.classList.add('green'); // Cambia el texto a verde
+                nameElement.textContent = newName; // Cambia el texto al nuevo nombre
+                nameElement.className = 'green';  // Asegúrate de que se aplica la clase "green"
             }
         });
     </script>
