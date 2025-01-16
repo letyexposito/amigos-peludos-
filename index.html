@@ -8,7 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         #name {
-            color: green; /* Estilo para que el nombre aparezca en verde */
+            color: inherit; /* Color original al cargar la página */
+        }
+        .green {
+            color: green; /* Clase que cambia el texto a verde */
         }
     </style>
 </head>
@@ -39,7 +42,9 @@
         document.getElementById('changeName').addEventListener('click', function() {
             const newName = prompt("Introduce tu nombre:");
             if (newName) {
-                document.getElementById('name').textContent = newName;
+                const nameElement = document.getElementById('name');
+                nameElement.textContent = newName;
+                nameElement.classList.add('green'); // Cambia el texto a verde
             }
         });
     </script>
