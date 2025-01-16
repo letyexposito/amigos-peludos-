@@ -24,6 +24,11 @@ h1 {
 
 h1 span {
     transition: all 0.3s ease; /* Transición suave para cambios de color y fuente */
+    color: inherit; /* Color inicial */
+}
+
+.green {
+    color: green !important; /* Cambia el texto a verde */
 }
 
 p {
@@ -112,4 +117,3 @@ img {
         transform: translateX(100vw);
     }
 }
-
