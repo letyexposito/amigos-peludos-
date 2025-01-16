@@ -26,6 +26,18 @@
              alt="Pata de gato">
     </div>
 
+    <button id="changeName">Cambiar Usuario</button>
+
     <p><a href="https://apadan.org/" target="_blank">Descubre más</a></p>
+
+    <script>
+        document.getElementById('changeName').addEventListener('click', function() {
+            const newName = prompt("Introduce tu nombre:");
+            if (newName) {
+                document.getElementById('name').textContent = newName;
+            }
+        });
+    </script>
 </body>
 </html>
+
